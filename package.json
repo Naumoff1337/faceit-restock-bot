@@ -1,0 +1,28 @@
+{
+  "name": "faceit-restock-bot",
+  "version": "1.0.0",
+  "description": "This bot was made to check availability of any item(-s) in the FACEIT Shop so you can get a Telegram notification when the item becomes available to withdraw.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node ./dist/index",
+    "build": "tsc",
+    "clear": "rm -rf dist logs",
+    "lint": "tslint 'src/**/*.ts' -t codeFrame",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "naumoff",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/pg": "^7.14.9",
+    "@types/request": "^2.48.5",
+    "nodemon": "^2.0.7",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "pg": "^8.5.1",
+    "request": "^2.88.2",
+    "telegraf": "^3.38.0"
+  }
+}
